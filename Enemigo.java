@@ -5,7 +5,7 @@ public class Enemigo{
     private int vidaMostro;
     private int dañoMostro;
 
-    public Enemigo(String NombreMostro, int VidaMostro, int DañoMostro){
+    public Enemigo(String nombreMostro, int vidaMostro, int dañoMostro){
         this.nombreMostro = nombreMostro;
         this.vidaMostro = vidaMostro;
         this.vidaMostroAhora = vidaMostro;

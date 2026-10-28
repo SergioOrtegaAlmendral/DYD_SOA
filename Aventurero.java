@@ -1,5 +1,5 @@
 public class Aventurero {
-    private final int curacionPocion = 20;
+    private final int curacionPocion = 60;
     
     private String nombreAventurero;
     private int vidaAventureroAhora;
@@ -23,6 +23,9 @@ public class Aventurero {
         if (cantidadPociones > 0){
             cantidadPociones--;
             vidaAventureroAhora += curacionPocion;
+            if(vidaAventureroAhora > vidaMaximaAventurero){
+                vidaAventureroAhora = vidaMaximaAventurero;
+            }
         }else{
             System.out.println("El huesazo no me quedan pociones pociones puñeta");
         }
